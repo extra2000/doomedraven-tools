@@ -728,7 +728,7 @@ function dependencies() {
     # pip3 install flare-capa fails for me
     cd /tmp || return
     if [ ! -d /tmp/capa ]; then
-        git clone --recurse-submodules https://github.com/fireeye/capa.git
+        git clone --recurse-submodules --branch v1.5.1 https://github.com/fireeye/capa.git
     fi
     cd capa || return
     git pull
